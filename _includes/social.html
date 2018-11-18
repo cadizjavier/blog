@@ -1,0 +1,18 @@
+<section class="social">
+  <div class="bio">
+    <img src="{{site.author.picture}}?s=200">
+    <p>{{ site.author.bio }}</p>
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/{{ site.author.github }}">
+      {% include social/gh-icon.svg %}
+    </a>
+    <a href="{{ site.author.stackoverflow }}">
+      {% include social/so-icon.svg %}
+    </a>
+    <a href="https://twitter.com/{{ site.author.twitter }}">
+      {% include social/tw-icon.svg %}
+    </a>
+  </div>
+</section>
