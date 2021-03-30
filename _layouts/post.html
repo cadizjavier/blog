@@ -2,11 +2,9 @@
 layout: default
 ---
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <span class="post-date">{{ page.date | date: '%B %d' }}</span>
+<article>
   <h1 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-
+  <span class="post-date">{{ page.date | date: '%B %d' }}</span>
   <div class="post-content" itemprop="articleBody"></div>
     {{ content }}
   </div>
